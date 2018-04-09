@@ -1,0 +1,9 @@
+I:\project\Shop Billing\Shop Billing\bin\Debug\Shop Billing.exe.config
+I:\project\Shop Billing\Shop Billing\bin\Debug\Shop Billing.exe
+I:\project\Shop Billing\Shop Billing\bin\Debug\Shop Billing.pdb
+I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.csprojResolveAssemblyReference.cache
+I:\project\Shop Billing\Shop Billing\obj\Debug\Shop_Billing.frmuser.resources
+I:\project\Shop Billing\Shop Billing\obj\Debug\Shop_Billing.Properties.Resources.resources
+I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.csproj.GenerateResource.Cache
+I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.exe
+I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.pdb
