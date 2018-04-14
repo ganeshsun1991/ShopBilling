@@ -127,32 +127,32 @@ namespace Shop_Billing.BL
                 sqlcon.Close();
             }
         }
-        //public DataTable AlreadyExistsUsername(string username)
-        //{
-        //    sqlcon.Open();
-        //    cmd = new SqlCommand();
-        //    cmd.CommandType = CommandType.StoredProcedure;
-        //    cmd.CommandText = "[dbo].[SP_ALREADYEXITSUSER_USER_DETAILS]";
-        //    cmd.Connection = sqlcon;
-        //    cmd.Parameters.AddWithValue("@USER_NAME", username);
-        //    DataTable dtusername = new DataTable();
-        //    try
-        //    {
+        public DataTable AlreadyExistsUsername(string username)
+        {
+            sqlcon.Open();
+            cmd = new SqlCommand();
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "[dbo].[SP_ALREADYEXITSUSER_USER_DETAILS]";
+            cmd.Connection = sqlcon;
+            cmd.Parameters.AddWithValue("@USER_NAME", username);
+            DataTable dtusername = new DataTable();
+            try
+            {
+
+                SqlDataAdapter da;
+                da = new SqlDataAdapter(cmd);
+                da.Fill(dtusername);               
+            }
+            catch(Exception ex)
+            {
                
-        //        SqlDataAdapter da;
-        //        da = new SqlDataAdapter(cmd.CommandText, sqlcon);
-        //        da.Fill(dtusername);
-        //        return dtusername;
-        //    }
-        //    catch 
-        //    {
-        //        return dtusername;
-        //    }
-        //    finally
-        //    {
-        //        sqlcon.Close();
-        //    }
-        //}
+            }
+            finally
+            {
+                sqlcon.Close();
+            }
+            return dtusername;
+        }
        
         //public DataTable AlreadyExistsUsername(string username)
         //{
