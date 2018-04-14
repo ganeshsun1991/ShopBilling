@@ -54,7 +54,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblRowsCount = new System.Windows.Forms.Label();
+            this.txtRowsCount = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -103,6 +104,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnClear);
             this.groupBox1.Controls.Add(this.pbUserImagebox);
             this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Controls.Add(this.button3);
@@ -144,7 +146,7 @@
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnDelete.Location = new System.Drawing.Point(354, 215);
+            this.btnDelete.Location = new System.Drawing.Point(286, 215);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(84, 31);
             this.btnDelete.TabIndex = 11;
@@ -157,7 +159,7 @@
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(446, 215);
+            this.button3.Location = new System.Drawing.Point(466, 215);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 31);
             this.button3.TabIndex = 10;
@@ -170,11 +172,11 @@
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEdit.Location = new System.Drawing.Point(264, 215);
+            this.btnEdit.Location = new System.Drawing.Point(196, 215);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(84, 31);
             this.btnEdit.TabIndex = 9;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "Update";
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -182,7 +184,8 @@
             // 
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(172, 215);
+            this.btnAdd.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnAdd.Location = new System.Drawing.Point(106, 215);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(84, 31);
             this.btnAdd.TabIndex = 8;
@@ -326,31 +329,42 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(316, 16);
+            this.label7.Location = new System.Drawing.Point(325, 17);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(233, 23);
+            this.label7.Size = new System.Drawing.Size(197, 23);
             this.label7.TabIndex = 16;
-            this.label7.Text = "Add and Edit User Page";
+            this.label7.Text = "Add and Edit Users ";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(744, 315);
+            this.label8.Location = new System.Drawing.Point(727, 317);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(116, 20);
             this.label8.TabIndex = 17;
             this.label8.Text = "Total Records :";
             // 
-            // lblRowsCount
+            // txtRowsCount
             // 
-            this.lblRowsCount.AutoSize = true;
-            this.lblRowsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRowsCount.Location = new System.Drawing.Point(867, 314);
-            this.lblRowsCount.Name = "lblRowsCount";
-            this.lblRowsCount.Size = new System.Drawing.Size(18, 20);
-            this.lblRowsCount.TabIndex = 18;
-            this.lblRowsCount.Text = "0";
+            this.txtRowsCount.Location = new System.Drawing.Point(849, 317);
+            this.txtRowsCount.Name = "txtRowsCount";
+            this.txtRowsCount.ReadOnly = true;
+            this.txtRowsCount.Size = new System.Drawing.Size(34, 20);
+            this.txtRowsCount.TabIndex = 18;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClear.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnClear.Location = new System.Drawing.Point(376, 215);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(84, 31);
+            this.btnClear.TabIndex = 13;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // frmuser
             // 
@@ -359,7 +373,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Turquoise;
             this.ClientSize = new System.Drawing.Size(898, 598);
-            this.Controls.Add(this.lblRowsCount);
+            this.Controls.Add(this.txtRowsCount);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
@@ -369,6 +383,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmuser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User Details";
             this.Load += new System.EventHandler(this.frmuser_Load);
             this.panel1.ResumeLayout(false);
@@ -406,7 +421,8 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.PictureBox pbUserImagebox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblRowsCount;
+        private System.Windows.Forms.TextBox txtRowsCount;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 

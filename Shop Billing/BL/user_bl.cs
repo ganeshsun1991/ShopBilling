@@ -25,7 +25,7 @@ namespace Shop_Billing.BL
             {
                 sqlcon.Open();
                 SqlDataAdapter da;
-                da = new SqlDataAdapter("select u.USER_ID,NAME,MOBILE_NUMBER as 'MOBILE NUMBER',USER_NAME as 'USER NAME',role.USER_ACCESS as 'USER ROLE',(select NAME from TBL_A_USER where USER_ID=CREATED_BY) as 'CREATED BY' from TBL_A_USER u inner join TBL_A_USER_ROLE role on role.USER_ID=u.USER_ID", sqlcon);
+                da = new SqlDataAdapter("select u.USER_ID,PASSWORD,NAME,MOBILE_NUMBER as 'MOBILE NUMBER',USER_NAME as 'USER NAME',role.USER_ACCESS as 'USER ROLE',(select NAME from TBL_A_USER where USER_ID=CREATED_BY) as 'CREATED BY' from TBL_A_USER u inner join TBL_A_USER_ROLE role on role.USER_ID=u.USER_ID", sqlcon);
                 da.Fill(dt);
                 sqlcon.Close();
                 return dt;
