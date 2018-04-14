@@ -169,7 +169,7 @@ namespace Shop_Billing
                 DataTable dtusername = userbl.AlreadyExistsUsername(txtUserName.Text);
                 if (dtusername != null && dtusername.Rows.Count > 0)
                 {
-                    if (txtUserName.Text == dtusername.Rows[0][1].ToString())
+                    if (txtUserName.Text == dtusername.Rows[0][0].ToString())
                     {
                         ms.CallMessageBox("Already Exists this user name please enter another one.", "Already Exists", "ex");
                         txtUserName.Focus();
@@ -181,6 +181,7 @@ namespace Shop_Billing
                     return true;
                 }
             }
+            return false;
         }
 
         private void txtMobileNo_KeyPress(object sender, KeyPressEventArgs e)
