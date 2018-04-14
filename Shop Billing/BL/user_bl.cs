@@ -141,17 +141,19 @@ namespace Shop_Billing.BL
 
                 SqlDataAdapter da;
                 da = new SqlDataAdapter(cmd);
-                da.Fill(dtusername);
-                return dtusername;
+
+                da.Fill(dtusername);               
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
-                return dtusername;
+               
             }
             finally
             {
                 sqlcon.Close();
             }
+
+            return dtusername;
         }
        
         //public DataTable AlreadyExistsUsername(string username)

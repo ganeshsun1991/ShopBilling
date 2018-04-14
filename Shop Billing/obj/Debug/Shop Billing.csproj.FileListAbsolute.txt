@@ -7,3 +7,12 @@ I:\project\Shop Billing\Shop Billing\obj\Debug\Shop_Billing.Properties.Resources
 I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.csproj.GenerateResource.Cache
 I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.exe
 I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.pdb
+F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe.config
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.exe
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csprojResolveAssemblyReference.cache
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.frmuser.resources
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.Properties.Resources.resources
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csproj.GenerateResource.Cache
+F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe
+F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.pdb
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.pdb
