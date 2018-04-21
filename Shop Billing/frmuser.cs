@@ -46,8 +46,16 @@ namespace Shop_Billing
             BindingSource bSource = new BindingSource();
             bSource.DataSource = userbl.getuserrecords();
             dgvUser.DataSource = bSource;
-            dgvUser.Columns[0].Visible = false;
-            lblRowsCount.Text = Convert.ToString(dgvUser.RowCount);
+            if (dgvUser.Rows.Count > 0)
+            {
+                dgvUser.Columns[0].Visible = false;
+                dgvUser.Columns[1].Visible = false;
+                txtRowsCount.Text = Convert.ToString(dgvUser.RowCount);
+            }
+            else
+            {
+                ms.CallMessageBox("There is no records.", "No records in Database", "ex");
+            }
         }
         /// <summary>
         /// to add the details
@@ -78,7 +86,7 @@ namespace Shop_Billing
                         string strmessage = userbl.insertdetails(User);
                         if (strmessage == "Success")
                         {
-                            ms.CallMessageBox("The User Details has been saved successfully..", "Information", "Information");
+                            ms.CallMessageBox("The User Details has been saved successfully..", "Information", "information");
                             clear();
                         }
                         else
@@ -181,7 +189,8 @@ namespace Shop_Billing
                     return true;
                 }
             }
-            return true;
+            return false;
+
         }
 
         private void txtMobileNo_KeyPress(object sender, KeyPressEventArgs e)
@@ -200,10 +209,12 @@ namespace Shop_Billing
                 indexRow = e.RowIndex;
                 DataGridViewRow row = dgvUser.Rows[indexRow];
                 nSelectCelluserid = Convert.ToInt32(row.Cells[0].Value.ToString());
-                txtName.Text = row.Cells[1].Value.ToString();
-                txtMobileNo.Text = row.Cells[2].Value.ToString();
-                txtUserName.Text = row.Cells[3].Value.ToString();
-                if (row.Cells[4].Value.ToString() == "Admin")
+                txtPassword.Text = row.Cells[1].Value.ToString();
+                txtRetypePassword.Text = row.Cells[1].Value.ToString();
+                txtName.Text = row.Cells[2].Value.ToString();
+                txtMobileNo.Text = row.Cells[3].Value.ToString();
+                txtUserName.Text = row.Cells[4].Value.ToString();
+                if (row.Cells[5].Value.ToString() == "Admin")
                     rdbAdmin.Checked = true;
                 else
                     rdbUser.Checked = true;
@@ -256,6 +267,16 @@ namespace Shop_Billing
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            pbUserImagebox.Image = global::Shop_Billing.Properties.Resources.adduser;
+            btnAdd.Enabled = true;
+            btnEdit.Enabled = false;
+            btnDelete.Enabled = false;
+            grid_view_show_user_records();
+            clear();
         }
 
        
