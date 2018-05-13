@@ -16,7 +16,7 @@ namespace Shop_Billing
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmuser());
+            Application.Run(new frmBilling());
         }
     }
 }

@@ -47,8 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Billing_bl.cs" />
+    <Compile Include="BL\productmodel.cs" />
+    <Compile Include="BL\product_bl.cs" />
     <Compile Include="BL\usermodel.cs" />
     <Compile Include="BL\user_bl.cs" />
+    <Compile Include="frmBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBilling.Designer.cs">
+      <DependentUpon>frmBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproduct.Designer.cs">
+      <DependentUpon>frmproduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmuser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +73,12 @@
     <Compile Include="message box\messageboxtype.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBilling.resx">
+      <DependentUpon>frmBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproduct.resx">
+      <DependentUpon>frmproduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmuser.resx">
       <DependentUpon>frmuser.cs</DependentUpon>
     </EmbeddedResource>

@@ -83,6 +83,7 @@ namespace Shop_Billing
                     if (btn.Text == "Add")
                     {
                         btnEdit.Enabled = false;
+                        btnDelete.Enabled = false;
                         string strmessage = userbl.insertdetails(User);
                         if (strmessage == "Success")
                         {
@@ -92,7 +93,7 @@ namespace Shop_Billing
                         else
                             ms.CallMessageBox(strmessage + "\nPlease Call system Administrator.", "Error", "error");
                     }
-                    else if (btn.Text == "Edit")
+                    else if (btn.Text == "Update")
                     {
                         User.UserID = nSelectCelluserid;
                         string strmessage = userbl.UpdateUserDetails(User);
@@ -102,6 +103,8 @@ namespace Shop_Billing
                             pbUserImagebox.Image = global::Shop_Billing.Properties.Resources.adduser;
                             btnAdd.Enabled = true;
                             btnEdit.Enabled = false;
+                            btnDelete.Enabled = false;
+                            txtUserName.Enabled = true;
                             clear();
                         }
                         else
@@ -174,14 +177,20 @@ namespace Shop_Billing
             }
             else
             {
+
                 DataTable dtusername = userbl.AlreadyExistsUsername(txtUserName.Text);
                 if (dtusername != null && dtusername.Rows.Count > 0)
                 {
                     if (txtUserName.Text == dtusername.Rows[0][0].ToString())
                     {
-                        ms.CallMessageBox("Already Exists this user name please enter another one.", "Already Exists", "ex");
-                        txtUserName.Focus();
-                        return false;
+                        if (nSelectCelluserid == 0)
+                        {
+                            ms.CallMessageBox("Already Exists this user name please enter another one.", "Already Exists", "ex");
+                            txtUserName.Focus();
+                            return false;
+                        }
+                        else
+                            return true;
                     }
                 }
                 else
@@ -214,6 +223,7 @@ namespace Shop_Billing
                 txtName.Text = row.Cells[2].Value.ToString();
                 txtMobileNo.Text = row.Cells[3].Value.ToString();
                 txtUserName.Text = row.Cells[4].Value.ToString();
+                txtUserName.Enabled = false;
                 if (row.Cells[5].Value.ToString() == "Admin")
                     rdbAdmin.Checked = true;
                 else
@@ -237,6 +247,7 @@ namespace Shop_Billing
             txtRetypePassword.Text = "";
             rdbAdmin.Checked = true;
             nSelectCelluserid = 0;
+            txtUserName.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -260,6 +271,7 @@ namespace Shop_Billing
                 btnEdit.Enabled = false;
                 btnDelete.Enabled = false;
                 grid_view_show_user_records();
+                txtUserName.Enabled = true;
                 clear();
            
         }
@@ -276,6 +288,7 @@ namespace Shop_Billing
             btnEdit.Enabled = false;
             btnDelete.Enabled = false;
             grid_view_show_user_records();
+            txtUserName.Enabled = true;
             clear();
         }
 
