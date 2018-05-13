@@ -7,6 +7,7 @@ F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csproj.Gene
 F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe
 F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.pdb
 F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.pdb
+<<<<<<< HEAD
 I:\project\Shop Billing\Shop Billing\bin\Debug\Shop Billing.exe.config
 I:\project\Shop Billing\Shop Billing\bin\Debug\Shop Billing.exe
 I:\project\Shop Billing\Shop Billing\bin\Debug\Shop Billing.pdb
@@ -18,3 +19,6 @@ I:\project\Shop Billing\Shop Billing\obj\Debug\Shop_Billing.Properties.Resources
 I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.csproj.GenerateResource.Cache
 I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.exe
 I:\project\Shop Billing\Shop Billing\obj\Debug\Shop Billing.pdb
+=======
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.FromReport.resources
+>>>>>>> 9b0de6c117e3a2724eae1e59d35993218daa9931
