@@ -16,7 +16,11 @@ namespace Shop_Billing
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
+            Application.Run(new frmBilling());
+=======
             Application.Run(new FromReport());
+>>>>>>> 9b0de6c117e3a2724eae1e59d35993218daa9931
         }
     }
 }
