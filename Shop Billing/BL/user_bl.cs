@@ -155,9 +155,7 @@ namespace Shop_Billing.BL
 
             return dtusername;
         }
-<<<<<<< HEAD
-       
-=======
+
 
         //public DataTable AlreadyExistsUsername(string username)
         //{
@@ -177,6 +175,5 @@ namespace Shop_Billing.BL
         //        return dtusername;
         //    }
         //}
->>>>>>> 9b0de6c117e3a2724eae1e59d35993218daa9931
     }
 }
