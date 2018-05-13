@@ -16,3 +16,4 @@ F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csproj.Gene
 F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe
 F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.pdb
 F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.pdb
+F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.FromReport.resources

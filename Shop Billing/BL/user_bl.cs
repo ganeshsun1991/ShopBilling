@@ -12,7 +12,7 @@ namespace Shop_Billing.BL
     {
         SqlConnection sqlcon = new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["ConnectionString"]);
         SqlCommand cmd = new SqlCommand();
-       SqlDataAdapter da;
+        SqlDataAdapter da;
         BL.usermodel User = new BL.usermodel();
         /// <summary>
         /// get records from db user details
@@ -36,7 +36,7 @@ namespace Shop_Billing.BL
                 return dt;
             }
         }
-      
+
         /// <summary>
         /// to Insert Details in DB
         /// </summary>
@@ -49,7 +49,7 @@ namespace Shop_Billing.BL
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "[dbo].[SP_INSERT_USER_DETAILS]";
             cmd.Connection = sqlcon;
-            cmd.Parameters.AddWithValue("@NAME",user.Name);
+            cmd.Parameters.AddWithValue("@NAME", user.Name);
             cmd.Parameters.AddWithValue("@MOBILE_NUMBER", user.Mobilenumber);
             cmd.Parameters.AddWithValue("@USER_NAME", user.Username);
             cmd.Parameters.AddWithValue("@PASSWORD", user.password);
@@ -113,16 +113,16 @@ namespace Shop_Billing.BL
             try
             {
                 SqlDataAdapter da;
-                   da = new SqlDataAdapter(cmd.CommandText, sqlcon);
+                da = new SqlDataAdapter(cmd.CommandText, sqlcon);
 
-                 cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
                 return "Deleted";
             }
             catch (Exception ex)
             {
                 return ex.Message;
             }
-            finally                 
+            finally
             {
                 sqlcon.Close();
             }
@@ -142,11 +142,11 @@ namespace Shop_Billing.BL
                 SqlDataAdapter da;
                 da = new SqlDataAdapter(cmd);
 
-                da.Fill(dtusername);               
+                da.Fill(dtusername);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-               
+
             }
             finally
             {
@@ -155,7 +155,7 @@ namespace Shop_Billing.BL
 
             return dtusername;
         }
-       
+
         //public DataTable AlreadyExistsUsername(string username)
         //{
         //    DataTable dtusername = new DataTable();
