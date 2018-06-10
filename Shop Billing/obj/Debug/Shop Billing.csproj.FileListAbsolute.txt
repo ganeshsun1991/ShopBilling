@@ -9,3 +9,14 @@ F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe
 F:\Project Workspace\ShopBilling\Shop Billing\bin\Debug\Shop Billing.pdb
 F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.exe
 F:\Project Workspace\ShopBilling\Shop Billing\obj\Debug\Shop Billing.pdb
+I:\project\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe.config
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop Billing.exe
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop Billing.pdb
+I:\project\ShopBilling\Shop Billing\bin\Debug\Shop Billing.exe
+I:\project\ShopBilling\Shop Billing\bin\Debug\Shop Billing.pdb
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.frmBilling.resources
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.frmproduct.resources
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.frmuser.resources
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.FromReport.resources
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.Properties.Resources.resources
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csproj.GenerateResource.Cache

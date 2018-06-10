@@ -26,7 +26,7 @@ namespace Shop_Billing
         private void FromReport_Load(object sender, EventArgs e)
         {
             this.crystalReportViewer1.RefreshReport();
-            rprt.Load(@"F:\Project Workspace\ShopBilling\Shop Billing\Reports\Bill_Report.rpt");
+            rprt.Load(@"I:\project\ShopBilling\Shop Billing\Reports\Bill_Report.rpt");
             SqlCommand cmd = new SqlCommand("Dp_Get_Bill_Deatils_For_Report", sqlcon);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = sqlcon;
