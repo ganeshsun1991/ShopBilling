@@ -20,3 +20,4 @@ I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.frmuser.resources
 I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.FromReport.resources
 I:\project\ShopBilling\Shop Billing\obj\Debug\Shop_Billing.Properties.Resources.resources
 I:\project\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csproj.GenerateResource.Cache
+I:\project\ShopBilling\Shop Billing\obj\Debug\Shop Billing.csprojResolveAssemblyReference.cache
